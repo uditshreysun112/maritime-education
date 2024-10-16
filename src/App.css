@@ -36,6 +36,12 @@
 h1#heading {
   font-size: 50px;
 }
+/* media query */
+@media (max-width: 576px) {
+  h1#heading {
+    font-size: 30px;
+  }
+}
 
 /* p {
   font-size: 25px;
@@ -53,8 +59,10 @@ h1#heading {
 
 #logo{
   /* border-radius: 120%; */
-  background-position: bottom;
+  /* background-position: fixed; */
+  /* position: fixed;*/
   margin-left: 40px;
+  /* z-index: 1000; */ 
   /* margin-top: 20px; */
 }
 
@@ -444,4 +452,5 @@ background-color: rgb(0, 102, 0);
   color: aqua;
   transition: 0.3s;
 }
+
 

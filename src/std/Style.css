@@ -1,0 +1,132 @@
+* {
+margin: 0;
+padding: 0;
+/* font-family: Playfair Display, serif; */
+}
+#back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    transition: 0.5s;
+}
+.wrapper:hover{
+        transform: scale(1.05); /* Slight zoom-in */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Elevated shadow effect */
+        transition: 0.5s;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+.input-box{
+    margin: 10px 35px;
+    padding: 10px 0px;
+    width: 80% !important;
+    border: 2px solid rgba(216, 216, 216, 0.41);
+    background:none;
+    /* background: none; */
+    border-radius: 30px;
+    width: 53%;
+}
+#Fauser{
+    color: white;
+    margin-left: 100px;
+}
+#Falock{
+    color: white;
+    margin-left: 100px;
+}
+#int{
+    background: none;
+    border-radius: 30px;
+    border: none;
+}
+
+.input::placeholder{
+    margin-left: 200x;
+    padding: 200px;
+}
+#pas{
+    background: none;
+    border-radius: 30px;
+    border: none;
+}
+#pas::placeholder{
+    color: rgb(255, 255, 255) !important;
+
+}
+#int::placeholder{
+    color: rgb(255, 255, 255) !important;
+}
+.btn-1{
+    
+    width: 78%;
+    border-radius: 30px;
+    padding: 7px 0px;
+    border: none;
+    font-weight:bold ;
+}
+.btn-1:hover{
+    background: none;
+    border: 1.5px solid white;
+    color: white;
+}
+
+/* Media Queries */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .wrapper {
+      width: 300px; /* Reduce width */
+    }
+    #Fauser{
+        margin-left: 80%;
+        margin-top: -44px;
+    }
+    #Falock{
+        margin-left: 80%;
+        margin-top: -44px;
+    }
+    .input-box {
+      margin: 10px 20px;
+      width: 90%;
+    }
+  
+    .wrapper h1 {
+      font-size: 30px; /* Reduce font size */
+    }
+  
+    .btn-1 {
+      width: 85%; /* Adjust button width */
+    }
+  }
+  
+  /* Mobile (480px and below) */
+  @media (max-width: 480px) {
+    .wrapper {
+      width: 280px; /* Further reduce width */
+    }
+  
+    .input-box {
+      margin: 10px 10px;
+      width: 100%;
+    }
+  
+    .wrapper h1 {
+      font-size: 24px; /* Reduce font size for small screens */
+    }
+  
+    .btn-1 {
+      width: 90%; /* Full width on mobile */
+    }
+  }

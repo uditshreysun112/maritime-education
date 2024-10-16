@@ -7,6 +7,7 @@ import icon3 from "./assets/expertise-icon.png"
 
 
 export const Home = () => {
+    
     return (
         <>
 

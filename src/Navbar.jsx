@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import logo from "./assets/maritime_logo1.jpeg";
 
@@ -21,18 +22,25 @@ export const Navbar = () => {
     const handleAboutMouseLeave = () => {
         setIsAboutOpen(false);
     };
+    const navigate = useNavigate();
+    
+    const handleLoginClick = () => {
+        navigate('/std/std_login'); // Navigates to the "/student-login" route
+    };
 
     return (
         <>
             <header className="header">
-                <div className="row my-2 mt-3">
-                    <div className="col-md-9">
-                        <img className="shadow" id="logo" src={logo} alt="" style={{ width: '80px', height: '60px' }} />
+                
+                    <div className="row my-2">
+                        <div className="col-md-9">
+                            <img className="shadow" id="logo" src={logo} alt="" style={{ width: '80px', height: '60px' }} />
+                        </div>
+                        <div className="col-md-3 text-end ">
+                            <button className="button" onClick={handleLoginClick}>STUDENT LOGIN</button>
+                        </div>
                     </div>
-                    <div className="col-md-3 text-end ">
-                        <button className="button">STUDENT LOGIN</button>
-                    </div>
-                </div>
+            
                 <nav className="navbar navbar-expand-lg navbar-light bg-shadow ">
                     <div className="container-fluid">
                         <button
@@ -66,9 +74,9 @@ export const Navbar = () => {
                                         About Us
                                     </a>
                                     <ul className={`dropdown-menu ${isAboutOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
-                                        <li><a className="dropdown-item" href="#">About MTA</a></li>
-                                        <li><a className="dropdown-item" href="#">Meet The Team</a></li>
-                                        <li><a className="dropdown-item" href="#">MTA Authors</a></li>
+                                        <li><Link className="dropdown-item" to="about_amt">About MTA</Link></li>
+                                        <li><Link className="dropdown-item" to="#">Meet The Team</Link></li>
+                                        <li><Link className="dropdown-item" to="#">MTA Authors</Link></li>
                                     </ul>
                                 </li>
                                 <li
@@ -86,7 +94,7 @@ export const Navbar = () => {
                                         Course
                                     </a>
                                     <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
-                                        <li><a className="dropdown-item" href="#">All Courses</a></li>
+                                        <li><Link className="dropdown-item" to="all_courses">All Courses</Link></li>
                                         <li><a className="dropdown-item" href="#">Full Length Diploma</a></li>
                                         <li><a className="dropdown-item" href="#">Short Courses</a></li>
                                         <li><a className="dropdown-item" href="#">Design Your Own Diploma</a></li>
