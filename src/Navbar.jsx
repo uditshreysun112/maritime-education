@@ -75,8 +75,8 @@ export const Navbar = () => {
                                     </a>
                                     <ul className={`dropdown-menu ${isAboutOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
                                         <li><Link className="dropdown-item" to="about_amt">About MTA</Link></li>
-                                        <li><Link className="dropdown-item" to="#">Meet The Team</Link></li>
-                                        <li><Link className="dropdown-item" to="#">MTA Authors</Link></li>
+                                        <li><Link className="dropdown-item" to="team">Meet The Team</Link></li>
+                                        {/* <li><Link className="dropdown-item" to="#">MTA Authors</Link></li> */}
                                     </ul>
                                 </li>
                                 <li
@@ -95,9 +95,9 @@ export const Navbar = () => {
                                     </a>
                                     <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
                                         <li><Link className="dropdown-item" to="all_courses">All Courses</Link></li>
-                                        <li><a className="dropdown-item" href="#">Full Length Diploma</a></li>
-                                        <li><a className="dropdown-item" href="#">Short Courses</a></li>
-                                        <li><a className="dropdown-item" href="#">Design Your Own Diploma</a></li>
+                                        <li><Link className="dropdown-item" to="diplomas">Full Length Diploma</Link></li>
+                                        {/* <li><a className="dropdown-item" to="#">Short Courses</a></li> */}
+                                        {/* <li><a className="dropdown-item" to="#">Design Your Own Diploma</a></li> */}
                                     </ul>
                                 </li>
                                 <li className="nav-item">

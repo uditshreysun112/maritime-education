@@ -15,12 +15,12 @@ padding: 0;
     border: 2px solid rgba(255,255,255,.2);
     border-radius: 10px;
     backdrop-filter: blur(20px);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .wrapper:hover{
-        transform: scale(1.05); /* Slight zoom-in */
+        transform: scale(1.03); /* Slight zoom-in */
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Elevated shadow effect */
-        transition: 0.5s;
+        transition: 0.3s;
 }
 .wrapper h1{
     font-size: 36px;
@@ -50,6 +50,9 @@ padding: 0;
     background: none;
     border-radius: 30px;
     border: none;
+    outline: none;
+    color: aliceblue;
+    padding-left: 10px;
 }
 
 .input::placeholder{
@@ -60,6 +63,9 @@ padding: 0;
     background: none;
     border-radius: 30px;
     border: none;
+    outline: none;
+    color: aliceblue;
+    padding-left: 10px;
 }
 #pas::placeholder{
     color: rgb(255, 255, 255) !important;
