@@ -59,13 +59,13 @@ export const Navbar = () => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-5 fw-bold">
                                 <li className="nav-item">
-                                    <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                                    <Link className="nav-link active mx-2" aria-current="page" to="/">Home</Link>
                                 </li>
                                 <li  className="nav-item dropdown"
                                     onMouseEnter={handleAboutMouseEnter}
                                     onMouseLeave={handleAboutMouseLeave}>
                                     <a
-                                        className="nav-link"
+                                        className="nav-link mx-2"
                                         href="#"
                                         id="navbarDropdownAbout"
                                         role="button"
@@ -85,7 +85,7 @@ export const Navbar = () => {
                                     onMouseLeave={handleMouseLeave}
                                 >
                                     <a
-                                        className="nav-link"
+                                        className="nav-link mx-2"
                                         href="#"
                                         id="navbarDropdown"
                                         role="button"
@@ -101,16 +101,16 @@ export const Navbar = () => {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="industry">Industry Vacancies</Link>
+                                    <Link className="nav-link mx-2" to="industry">Careers</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="f&q">F&Q</Link>
+                                    <Link className="nav-link mx-2" to="f&q">F&Q</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="news">News</Link>
+                                    <Link className="nav-link mx-2" to="news">News</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="contact">Contact</Link>
+                                    <Link className="nav-link ,mx-2" to="contact">Contact</Link>
                                 </li>
                             </ul>
                         </div>

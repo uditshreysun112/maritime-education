@@ -12,30 +12,42 @@ export const Footer = () => {
         <h1>Thanks For Scrolling</h1>
         <br />
       </div> */}
-      <hr className="mt-5 mb-5" />
-            <div className="box mt-5 text-center" style={{ color: 'white', backgroundColor: 'rgb(91, 94, 95)' }}>
-                <br />
-                <div className="container text-start pt-5 pb-5">
-                    <h3 id="sign-h3">Sign-up to receive email updates</h3>
-                    <div className="row">
-                        <div className="col-md-4">
-                            <form action="">
-                                <input type="text" placeholder="   Email address"  style={{height:'45px', width:'370px'}}/>
-                            </form>
-                        </div>
-                        <div className="col-md-4">
-                            <form action="">
-                                <input type="text" placeholder="   Full name"  style={{height:'45px', width:'370px'}}/>
-                            </form>
-                        </div>
-                        <div className="col-md-4">
-                            <button id="sign-btn">SIGN UP</button>
-                        </div>
-                    </div>
-                </div>
-                <br />
-                <br />
-            </div>
+    <hr className="mt-5 mb-5" />
+<div className="box mt-5 text-center" style={{ color: 'white', backgroundColor: 'rgb(91, 94, 95)' }}>
+  <br />
+  <div className="container text-start pt-5 pb-5">
+    <h3 id="sign-h3" className="h5">Sign-up to receive email updates</h3>
+    <div className="row">
+      <div className="col-12 col-md-4 mb-3">
+        <form action="">
+          <input
+            type="text"
+            placeholder="Email address"
+            className="form-control"
+            style={{ maxHeight: '45px' }}
+          />
+        </form>
+      </div>
+      <div className="col-12 col-md-4 mb-3">
+        <form action="">
+          <input
+            type="text"
+            placeholder="Full name"
+            className="form-control"
+            style={{ maxHeight: '45px' }}
+          />
+        </form>
+      </div>
+      <div className="col-12 col-md-4 mb-3">
+        <button id="sign-btn" className="btn btn-primary w-100" style={{ maxHeight: '35px' }}>
+          SIGN UP
+        </button>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+</div>
 
         <footer className="text-white pt-5 pb-4 " style={{ backgroundColor: 'rgb(28, 30, 43)' }}>
           

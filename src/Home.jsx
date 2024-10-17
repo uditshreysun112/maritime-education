@@ -16,7 +16,7 @@ export const Home = () => {
                     <h1 id="heading" >
                         Study Online with the <br />
                         Maritime Training Academy</h1>
-                    <p style={{ fontSize: '25px', color: "rgb(224, 224, 224)" }}>Enhance your career with a globally recognised Diploma or short <br /> course. Online learning allows you to study in your own time, at your <br />own pace, from anywhere in the world.</p>
+                    <p className="fs-4 fs-md-3 fs-lg-2 text-light">Enhance your career with a globally recognised Diploma or short <br /> course. Online learning allows you to study in your own time, at your <br />own pace, from anywhere in the world.</p>
                 </div>
             </div>
 
