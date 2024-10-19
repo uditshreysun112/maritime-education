@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import logo from "./assets/logo_img_maritime.png";
+import logo from "./assets/MARITIME_EDUCATION__1_-removebg-preview.png";
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -34,9 +34,9 @@ export const Navbar = () => {
                 
                     <div className="row">
                         <div className="col-md-6">
-                            <img className="shadow" id="logo" src={logo} alt="" style={{ width: '100px', height: '100px' }} />
+                            <img className="shadow" id="logo" src={logo} alt="" style={{ width: '120px', height: '120px', borderRadius:'100%' }} />
                         </div>
-                        <div className="col-md-6 text-end mt-4 ">
+                        <div className="col-md-6 text-end ">
                             <button className="button" style={{marginRight:'50px'}} onClick={handleLoginClick}>STUDENT LOGIN</button>
                         </div>
                     </div>
