@@ -43,7 +43,7 @@ export const Industry = () => {
                         <div className="col-md-8 text-light">
                             <h1 style={{paddingTop:'80px',fontFamily:'Playfair Display, serif'}}>Superyacht Recruiter</h1>                        
                                 <p>Get in touch with our partners SYR, who are global shoreside recruitment specialists. With over 20 years of experience across the team, they work with seafarers and shoreside applicants to identify and place them in exciting new positions. Their clients include some of the most prestigious brands in yachting, ranging from the ultra-boutique to the large international corporate employers, catering for the requirements of any applicant.</p>
-                                <p>Alongside their recruitment services, they offer in-depth career advice, salary benchmarking and CV/Interview coaching to help identify the perfect position for applicants. Whilst they work across shoreside as a whole, they specialise in design, engineering, brokerage and yacht management vacancies.</p>
+                                <p className="mb-5">Alongside their recruitment services, they offer in-depth career advice, salary benchmarking and CV/Interview coaching to help identify the perfect position for applicants. Whilst they work across shoreside as a whole, they specialise in design, engineering, brokerage and yacht management vacancies.</p>
                     <button className="maritime mt-5">VIEW MARITIME VACANCIES</button>
                         </div>
                     </div>
