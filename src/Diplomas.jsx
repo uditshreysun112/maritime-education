@@ -45,7 +45,6 @@ export const Diplomas = () => {
                                     <h4 className='text-light mt-4'>Art on Superyachts</h4>
                                     <button id='btn-deploma'>View Courses</button>
                                 </div>
-
                             </div>
                         </div>
                     </div>

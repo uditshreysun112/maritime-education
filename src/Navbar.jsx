@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import logo from "./assets/maritime_logo1.jpeg";
+import logo from "./assets/logo_img_maritime.png";
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,16 +30,17 @@ export const Navbar = () => {
 
     return (
         <>
-            <header className="header">
+            <header className="header bg-dark">
                 
-                    <div className="row my-2">
-                        <div className="col-md-9">
-                            <img className="shadow" id="logo" src={logo} alt="" style={{ width: '80px', height: '60px' }} />
+                    <div className="row">
+                        <div className="col-md-6">
+                            <img className="shadow" id="logo" src={logo} alt="" style={{ width: '100px', height: '100px' }} />
                         </div>
-                        <div className="col-md-3 text-end ">
-                            <button className="button" onClick={handleLoginClick}>STUDENT LOGIN</button>
+                        <div className="col-md-6 text-end mt-4 ">
+                            <button className="button" style={{marginRight:'50px'}} onClick={handleLoginClick}>STUDENT LOGIN</button>
                         </div>
                     </div>
+            </header>
             
                 <nav className="navbar navbar-expand-lg navbar-light bg-shadow ">
                     <div className="container-fluid">
@@ -116,7 +117,7 @@ export const Navbar = () => {
                         </div>
                     </div>
                 </nav>
-            </header>
+        
         </>
     );
 };
